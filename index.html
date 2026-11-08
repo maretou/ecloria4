@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ÉCLORIA — soins du corps et bijoux pour révéler votre éclat.">
+  <title>ÉCLORIA | Beauté & Élégance</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement">✨ Bienvenue chez ÉCLORIA — Révélez votre éclat, affirmez votre élégance.</div>
+
+  <header class="site-header">
+    <a class="logo" href="#accueil">ÉCLORIA<span>.</span><small>BEAUTÉ & ÉLÉGANCE</small></a>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Ouvrir le menu">☰</button>
+    <nav class="navigation" id="navigation">
+      <a href="#accueil">Accueil</a>
+      <a href="#boutique">Boutique</a>
+      <a href="#univers">Nos univers</a>
+      <a href="#apropos">À propos</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="cart-trigger" id="open-cart" aria-label="Ouvrir le panier">Panier <span id="cart-count">0</span></button>
+  </header>
+
+  <main>
+    <section class="hero" id="accueil">
+      <div class="hero-copy">
+        <p class="eyebrow">LE PETIT PLUS QUI CHANGE TOUT</p>
+        <h1>Votre beauté,<br><em>votre signature.</em></h1>
+        <p>Découvrez une sélection de soins pour le corps et de bijoux délicats, pensés pour accompagner chaque moment de votre journée.</p>
+        <a class="button button-dark" href="#boutique">Découvrir la boutique <span>→</span></a>
+        <div class="hero-note"><span>✦</span> Prenez soin de vous, avec élégance.</div>
+      </div>
+      <div class="hero-visual">
+        <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=1100&q=85" alt="Produits de beauté et soin du corps">
+        <div class="floating-note"><strong>ÉCLORIA</strong><span>Un éclat qui vous ressemble</span></div>
+      </div>
+    </section>
+
+    <section class="intro-strip">
+      <span>SOINS DU CORPS</span><i>✦</i><span>BIJOUX</span><i>✦</i><span>BEAUTÉ AU QUOTIDIEN</span><i>✦</i><span>ÉLÉGANCE</span>
+    </section>
+
+    <section class="section categories" id="univers">
+      <div class="section-heading">
+        <p class="eyebrow">EXPLOREZ NOS UNIVERS</p>
+        <h2>Choisissez votre <em>envie.</em></h2>
+        <p>Deux univers, mille façons de révéler votre style.</p>
+      </div>
+      <div class="category-grid">
+        <a href="#boutique" class="category-card" data-category-link="corps">
+          <img src="https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=900&q=85" alt="Collection de soins du corps">
+          <span class="category-shade"></span><span class="category-label"><small>DOUCEUR & SOIN</small><strong>Soins du corps</strong><b>Explorer la collection →</b></span>
+        </a>
+        <a href="#boutique" class="category-card" data-category-link="bijoux">
+          <img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=900&q=85" alt="Bijoux dorés élégants">
+          <span class="category-shade"></span><span class="category-label"><small>ÉCLAT & FINESSE</small><strong>Bijoux</strong><b>Explorer la collection →</b></span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section shop-section" id="boutique">
+      <div class="section-heading shop-heading">
+        <div><p class="eyebrow">LA SÉLECTION ÉCLORIA</p><h2>Nos <em>coups de cœur.</em></h2><p>Trouvez vos essentiels beauté et vos accessoires préférés.</p></div>
+        <div class="shop-search"><input type="search" id="search-input" placeholder="Rechercher un article..." aria-label="Rechercher un article"><span>⌕</span></div>
+      </div>
+      <div class="filter-row" aria-label="Filtrer les produits">
+        <button class="filter-btn active" data-filter="tout">Tout voir</button>
+        <button class="filter-btn" data-filter="corps">Soins du corps</button>
+        <button class="filter-btn" data-filter="bijoux">Bijoux</button>
+      </div>
+      <p class="result-count" id="result-count"></p>
+      <div class="products-grid" id="products-container"></div>
+      <p class="empty-message" id="empty-message" hidden>Aucun article ne correspond à votre recherche.</p>
+    </section>
+
+    <section class="promo">
+      <div><p class="eyebrow">UN MOMENT POUR VOUS</p><h2>La beauté se trouve<br><em>dans les détails.</em></h2><p>Composez votre sélection et faites-vous plaisir.</p><a href="#boutique" class="button button-light">Voir les articles →</a></div>
+      <img src="./photos/gammes.jpg" alt="Rituel de beauté et produits de soin">
+    </section>
+
+    <section class="section about-section" id="apropos">
+      <div class="about-image"><img src="./photos/Écloria, élégance en rose et mauve.png" ="Produits de beauté soigneusement présentés"></div>
+      <div class="about-copy"><p class="eyebrow">BIENVENUE CHEZ ÉCLORIA</p><h2>La confiance commence<br>par <em>vous.</em></h2><p>ÉCLORIA célèbre la beauté dans toute sa simplicité. Nous réunissons des essentiels de soin et des bijoux pour vous aider à vous sentir belle, confiante et élégante, chaque jour.</p><p class="signature">Avec amour, ÉCLORIA ♡</p></div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div><p class="eyebrow">UNE QUESTION ?</p><h2>Parlons de <em>vous.</em></h2><p>Besoin d'un renseignement sur un article ou une commande ? Écrivez-nous.</p></div>
+      <form id="contact-form" class="contact-form">
+        <input id="contact-name" type="text" placeholder="Votre nom" required>
+        <input id="contact-phone" type="tel" placeholder="Votre numéro WhatsApp" required>
+        <textarea id="contact-message" rows="3" placeholder="Votre message..." required></textarea>
+        <button class="button button-dark" type="submit">Envoyer sur WhatsApp →</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer"><a class="logo logo-footer" href="#accueil">ÉCLORIA<span>.</span><small>BEAUTÉ & ÉLÉGANCE</small></a><p>Révélez votre éclat, affirmez votre élégance.</p><small>© <span id="year"></span> ÉCLORIA. Tous droits réservés.</small></footer>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart-panel" id="cart-panel" aria-label="Votre panier" aria-hidden="true">
+    <div class="cart-header"><div><p class="eyebrow">VOTRE SÉLECTION</p><h2>Mon panier</h2></div><button id="close-cart" class="close-btn" aria-label="Fermer">×</button></div>
+    <div id="cart-items" class="cart-items"></div>
+    <div class="cart-bottom"><div class="total-line"><span>Total estimé</span><strong id="cart-total">0 FCFA</strong></div><button id="checkout-btn" class="button button-dark full-button">Passer commande →</button><p class="cart-hint">La commande sera préparée dans WhatsApp pour confirmation.</p></div>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
